@@ -149,3 +149,9 @@ body {
   padding: 15px; /* Adjust the padding as needed */
   font-size: 16px; /* Adjust the font size as needed */
 }
+
+.add-to-cart-button {
+  background-color: #148541;
+  width: 900px; /* Adjust the width as needed */
+  height: 50px;
+}
