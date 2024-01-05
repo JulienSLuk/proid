@@ -22,19 +22,48 @@
     <div class="donation-banner">
       <h2>Support Us!</h2>
       <p>Your contribution helps us continue our mission.</p>
-      <button class="button oval-button">Donate Now</button>
+      <button class="button oval-button" id="donateButton">Donate Now</button>
     </div>
 
     <div class="cart-total">
       <h2>Cart Total</h2>
       <p>Subtotal: $100.00</p>
-      <p>Donation Total: $20.00</p>
+      <p class="donation-total">Donation Total: $0.00</p>
       <p>Shipping: $10.00</p>
       <hr>
       <p>Total: $130.00</p>
-      <button class="button oval-button">Proceed to Checkout</button>
+      <button class="button oval-button" id="proceedButton">Proceed to Checkout</button>
     </div>
   </div>
 
+  <!-- Donation Modal -->
+  <div id="donationModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Add Food Items as Donation</h2>
+  
+      <form id="donationForm">
+        <div class="item-option">
+          <img src="tofu_image.jpg" alt="Tofu Image" width="50" height="50">
+          <label for="tofu">Tofu:</label>
+          <input type="number" id="tofuQuantity" name="tofuQuantity" min="0" value="0">
+          <span class="price">$5.00</span>
+        </div>
+  
+        <div class="item-option">
+          <img src="vegetable_pack_image.jpg" alt="Vegetable Pack Image" width="50" height="50">
+          <label for="vegetablePack">Vegetable Pack:</label>
+          <input type="number" id="vegetablePackQuantity" name="vegetablePackQuantity" min="0" value="0">
+          <span class="price">$10.00</span>
+        </div>
+  
+        <!-- Add more item options as needed -->
+  
+        <button type="button" class="button" onclick="addToCart()">Add to Cart</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
