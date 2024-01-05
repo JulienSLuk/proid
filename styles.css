@@ -29,8 +29,8 @@ body {
   .donation-banner {
     width: 60%; /* Same width as the shopping cart */
     padding: 20px;
-    background-color: #3498db;
-    color: #fff;
+    background-color: #DFF2E6;
+    color: #000000;
   }
   
   .cart-total {
@@ -88,6 +88,13 @@ body {
 
 .close:hover {
   color: black;
+}
+
+.learn-more {
+  margin-left: 10px; /* Adjust the margin as needed */
+  background-color: #E6E6E6;
+  color: #148541;
+  border: 2px solid #148541;
 }
 
   
