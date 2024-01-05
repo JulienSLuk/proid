@@ -74,3 +74,8 @@ function addToCart() {
     donationTotalElement.textContent = `Donation Total: $${total.toFixed(2)}`;
   }
   
+  function openLearnMore() {
+    // Add your logic to handle the "Learn More" button click event
+    // For example, you can open a new window, redirect to a learn more page, or display additional information.
+    alert("Learn more functionality coming soon!");
+  }
