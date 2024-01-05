@@ -148,8 +148,10 @@ body {
 }
 
 .close {
-  color: #aaa;
-  float: right;
+  color: #777; /* Adjust the color as needed */
+  position: absolute;
+  top: 15px; /* Adjust the top position as needed */
+  right: 30px; /* Adjust the right position as needed */
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
@@ -173,7 +175,7 @@ body {
 .donate-button {
   margin-left: 10px; /* Adjust the margin as needed */
   background-color: #148541;
-  color: #000000;
+  color: #ffffff;
   border: 2px solid #148541;
   width: 300px; /* Adjust the width as needed */
   height: 50px;
