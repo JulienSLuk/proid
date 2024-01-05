@@ -95,6 +95,19 @@ body {
   background-color: #E6E6E6;
   color: #148541;
   border: 2px solid #148541;
+  width: 300px; /* Adjust the width as needed */
+  height: 50px;
+  padding: 15px; /* Adjust the padding as needed */
+  font-size: 16px; /* Adjust the font size as needed */
 }
 
-  
+.donate-button {
+  margin-left: 10px; /* Adjust the margin as needed */
+  background-color: #148541;
+  color: #000000;
+  border: 2px solid #148541;
+  width: 300px; /* Adjust the width as needed */
+  height: 50px;
+  padding: 15px; /* Adjust the padding as needed */
+  font-size: 16px; /* Adjust the font size as needed */
+}
