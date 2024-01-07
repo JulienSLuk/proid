@@ -68,21 +68,25 @@ body {
   transform: translate(-50%, -50%);
   max-width: 80%; /* Adjust the max-width as needed */
   width: 4000px; /* Adjust the width as needed */
-  background-color: #DFF2E6;
+  background-color: transparent; /* Set background color to transparent */
+  backdrop-filter: blur(10px); /* Adjust the blur value for a translucent effect */
   border-radius: 15px; /* Adjust the border radius as needed */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
 
 .modal-content {
   /* ... (your existing modal content styles) */
   display: flex;
   flex-direction: column; /* Change the flex direction to column */
   align-items: center;
-  background-color: #DFF2E6;
+  background-color: transparent; /* Set background color to transparent */
+  backdrop-filter: blur(10px); /* Adjust the blur value for a translucent effect */
   padding: 20px;
   border-radius: 15px; /* Adjust the border radius as needed */
 }
+
+/* ... (other existing styles) */
+
 
 .title-description-container {
   display: flex;
