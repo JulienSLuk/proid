@@ -83,6 +83,8 @@ body {
   backdrop-filter: blur(10px); /* Adjust the blur value for a translucent effect */
   padding: 20px;
   border-radius: 15px; /* Adjust the border radius as needed */
+  max-height: 80vh; /* Set a maximum height for the modal content */
+  overflow-y: auto; /* Add a vertical scrollbar when content exceeds the height */
 }
 
 /* ... (other existing styles) */
@@ -191,4 +193,37 @@ body {
   background-color: #148541;
   width: 900px; /* Adjust the width as needed */
   height: 50px;
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 10px auto; /* Adjust margin for smaller screens */
+  }
+
+  .items,
+  .donation-cart,
+  .donation-banner,
+  .cart-total {
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  .button,
+  .learn-more,
+  .donate-button,
+  .add-to-cart-button {
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  /* Modal Styles */
+  .modal {
+    max-width: 100%; /* Full width for smaller screens */
+    width: 1000px; /* Auto width for smaller screens */
+    height: 800px;
+  }
+
+  .modal-content {
+    max-width: 100%; /* Full width for smaller screens */
+    width: auto; /* Auto width for smaller screens */
+  }
 }
