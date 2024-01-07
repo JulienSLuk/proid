@@ -31,10 +31,14 @@ function addToCart() {
     // Retrieve selected quantities and update donation cart
     const tofuQuantity = parseInt(document.getElementById("tofuQuantity").value);
     const vegetablePackQuantity = parseInt(document.getElementById("vegetablePackQuantity").value);
+    const filletFishQuantity = parseInt(document.getElementById("filletFishQuantity").value);
+    const greenCapsicumQuantity = parseInt(document.getElementById("greenCapsicumQuantity").value);
   
     // Calculate prices based on quantities
     const tofuPrice = tofuQuantity * 5.00;
     const vegetablePackPrice = vegetablePackQuantity * 10.00;
+    const filletFishPrice = filletFishQuantity * 8.00;
+    const greenCapsicumPrice = greenCapsicumQuantity * 3.50;
   
     // Update donation cart with selected items
     const donationCart = document.querySelector(".donation-cart");
@@ -50,6 +54,16 @@ function addToCart() {
     if (vegetablePackQuantity > 0) {
       donationTotal += vegetablePackPrice;
       addItemToCart(donationCart, "Vegetable Pack", vegetablePackQuantity, vegetablePackPrice);
+    }
+
+    if (filletFishQuantity > 0) {
+      donationTotal += filletFishPrice;
+      addItemToCart(donationCart, "Fillet Fish", filletFishQuantity, filletFishPrice);
+    }
+
+    if (greenCapsicumPrice > 0) {
+      donationTotal += greenCapsicumPrice;
+      addItemToCart(donationCart, "Green Capsicum", greenCapsicumQuantity, greenCapsicumPrice);
     }
   
     // Add more items as needed
