@@ -220,10 +220,14 @@ body {
     max-width: 100%; /* Full width for smaller screens */
     width: 1000px; /* Auto width for smaller screens */
     height: 800px;
+    background-color: rgba(223, 242, 230, 0.9); /* Fallback background color for mobile */
+    backdrop-filter: blur(10px);
   }
 
   .modal-content {
     max-width: 100%; /* Full width for smaller screens */
     width: auto; /* Auto width for smaller screens */
+    background-color: rgba(223, 242, 230, 0.9); /* Fallback background color for mobile */
+    backdrop-filter: blur(10px);
   }
 }
